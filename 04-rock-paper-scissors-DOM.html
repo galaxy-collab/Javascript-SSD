@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Scissors using DOM</title>
+</head>
+<body>
+
+  <p>Select your choice in this game of Rock Paper and Scissors</p>
+  
+  <button class="Rock-button" onclick="{
+    playGame('Rock');
+  }">
+    Rock
+  </button>
+
+  <button class="Paper-button" onclick="{
+    playGame('Paper');
+  }">
+    Paper
+  </button>
+  
+  <button class="Scissors-button" onclick="{
+    playGame('Scissors');
+  }">
+    Scissors
+  </button>
+
+  <p class = "score"></p>
+
+  <button class="Reset-button" onclick="{
+    reset();
+  }">
+    Reset
+  </button>
+
+<script src="01-functions.js">
+  document.querySelector(".score").innerHTML = getScore();
+</script>
+</body>
+</html>
