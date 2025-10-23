@@ -47,10 +47,11 @@ function playGame(userInput){
 // a function to display score
 
 function getScore(){
-  return document.querySelector(".score").innerHTML = `Wins: ${Result.Win}, Losses: ${Result.Loss}, Ties: ${Result.Tie}``
+  // return document.querySelector(".score").innerHTML = `Wins: ${Result.Win}, Losses: ${Result.Loss}, Ties: ${Result.Tie}`
+  return document.querySelector(".score").innerHTML = `Hell Yeah!`
 }
 
-// a function to reset score
+//a function to reset score
 
 function reset(){
   Result.Loss = 0;
